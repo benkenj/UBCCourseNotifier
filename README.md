@@ -1,4 +1,4 @@
-# A program for checking if certain courses are available,temporarily unavailable or restricted
+# A program for checking if certain courses are available
 
 This is a program designed to be run on an idle computer like a raspberry pi or desktop, and checks periodically if a course has become available or it's status has changed.
 
@@ -25,7 +25,7 @@ To run the program simply run
 
 ```
 python3 UBCCourseNotifierMain.py
-``
-`
+```
+
 and fill out the nessesary course info
  
