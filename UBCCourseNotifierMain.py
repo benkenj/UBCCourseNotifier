@@ -58,7 +58,6 @@ def gather_user_info():
     user_info["course_number"] = input("Enter course number: ")
     user_info["section"] = input("Enter section number: ")
 
-    #year = input("Enter year: ")
     user_info["phone_number"] = input("Enter phone number:(in format +xxxxxxxxxxx) ")
     user_info["restricted"] = input("Are restricted seats okay?(yes/no)")
     return user_info
@@ -79,10 +78,10 @@ def main():
         if status == 2:
             if user_info["restricted"] == "yes":
                 print("RESTRICTED SEAT AVAILABLE")
-                sendMessage('There is a restricted seat available in ' + user_info["department"] + ' ' + user_info["course_number"] + '! Grab it here: ' + url, user_info["phone_number"])
+                sendMessage('There is a restricted seat available in ' + user_info["department"] + ' ' + user_info["course_number"] + '! Grab it here: ' + defined_url, user_info["phone_number"])
             break
         if status == 3:
-            print("The Course is temporarily unavailable")
+            print("The course is temporarily unavailable")
             time.sleep(WAIT_TIME)
         else:
             time.sleep(WAIT_TIME)
